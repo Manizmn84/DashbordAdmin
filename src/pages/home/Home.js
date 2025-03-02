@@ -1,13 +1,8 @@
-import Topbar from '../../components/TopBar/Topbar';
-import Sidebar from '../../components/sidebar/Sidebar';
 import './Home.css'
-
+import Features from '../../components/features/Features';
 function Home() {
     return (
-        <>
-            <Topbar></Topbar>
-            <Sidebar></Sidebar>
-        </>
+        <Features></Features>
      );
 }
 

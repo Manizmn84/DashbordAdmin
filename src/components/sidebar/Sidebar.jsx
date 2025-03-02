@@ -12,6 +12,7 @@ import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
 import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
 import ReportIcon from "@mui/icons-material/WorkOutline";
+import { Link } from "react-router-dom";
 
 import "./Sidebar.css";
 
@@ -22,10 +23,12 @@ export default function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem active">
-              <LineStyleIcon className="sidebarIcon" />
-              Home
-            </li>
+            <Link to="/home">
+              <li className="sidebarListItem active">
+                <LineStyleIcon className="sidebarIcon" />
+                Home
+              </li>
+            </Link>
             <li className="sidebarListItem">
               <TimelineIcon className="sidebarIcon" />
               Analytics
