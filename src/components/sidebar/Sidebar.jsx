@@ -42,10 +42,12 @@ export default function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Quick Menu</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem">
-              <PermIdentityIcon className="sidebarIcon" />
-              Users
-            </li>
+            <Link to="/Users">
+              <li className="sidebarListItem">
+                <PermIdentityIcon className="sidebarIcon" />
+                Users
+              </li>
+            </Link>
             <li className="sidebarListItem">
               <PermIdentityIcon className="sidebarIcon" />
               New User
