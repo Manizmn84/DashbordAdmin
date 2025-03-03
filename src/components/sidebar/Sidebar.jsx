@@ -52,10 +52,12 @@ export default function Sidebar() {
               <PermIdentityIcon className="sidebarIcon" />
               New User
             </li>
-            <li className="sidebarListItem">
-              <StorefrontIcon className="sidebarIcon" />
-              Products
-            </li>
+            <Link to="/Products">
+              <li className="sidebarListItem">
+                <StorefrontIcon className="sidebarIcon" />
+                Products
+              </li>
+            </Link>
             <li className="sidebarListItem">
               <AttachMoneyIcon className="sidebarIcon" />
               Transactions
